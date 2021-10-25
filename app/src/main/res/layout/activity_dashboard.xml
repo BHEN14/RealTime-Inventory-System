@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark"
+    tools:context=".dashboard">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="start"
+        android:clickable="true"
+        android:id="@+id/query"
+        android:queryHint="Search Item"
+        android:closeIcon="@drawable/ic_exit"
+        android:background="@color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="Abdul Rasheed Autos"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/sample"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serial #"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:background="@color/green"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categ"
+                android:textColor="@color/white"
+                android:background="@color/green"
+                android:padding="5dp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:layout_weight="4"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                />
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:id="@+id/tableData"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+
+        </TableLayout>
+
+    </ScrollView>
+    <TableLayout
+        android:layout_width="match_parent"
+    android:layout_marginTop="-50dp"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Delete"
+                android:onClick="del"
+                android:background="@color/green"
+
+                />
+            <Button
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Update"
+                android:onClick="up"
+                android:background="@color/white"
+
+                />
+            <Button
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="New"
+                android:onClick="nw"
+                android:background="@color/green"
+
+                />
+        </TableRow>
+    </TableLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
